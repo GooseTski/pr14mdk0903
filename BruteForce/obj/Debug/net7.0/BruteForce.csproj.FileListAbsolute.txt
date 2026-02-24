@@ -3,3 +3,13 @@ D:\OSPanel\domains\localhost\pr14mdk0903\BruteForce\obj\Debug\net7.0\BruteForce.
 D:\OSPanel\domains\localhost\pr14mdk0903\BruteForce\obj\Debug\net7.0\BruteForce.AssemblyInfoInputs.cache
 D:\OSPanel\domains\localhost\pr14mdk0903\BruteForce\obj\Debug\net7.0\BruteForce.AssemblyInfo.cs
 D:\OSPanel\domains\localhost\pr14mdk0903\BruteForce\obj\Debug\net7.0\BruteForce.csproj.CoreCompileInputs.cache
+D:\OSPanel\domains\localhost\pr14mdk0903\BruteForce\bin\Debug\net7.0\BruteForce.exe
+D:\OSPanel\domains\localhost\pr14mdk0903\BruteForce\bin\Debug\net7.0\BruteForce.deps.json
+D:\OSPanel\domains\localhost\pr14mdk0903\BruteForce\bin\Debug\net7.0\BruteForce.runtimeconfig.json
+D:\OSPanel\domains\localhost\pr14mdk0903\BruteForce\bin\Debug\net7.0\BruteForce.dll
+D:\OSPanel\domains\localhost\pr14mdk0903\BruteForce\bin\Debug\net7.0\BruteForce.pdb
+D:\OSPanel\domains\localhost\pr14mdk0903\BruteForce\obj\Debug\net7.0\BruteForce.dll
+D:\OSPanel\domains\localhost\pr14mdk0903\BruteForce\obj\Debug\net7.0\refint\BruteForce.dll
+D:\OSPanel\domains\localhost\pr14mdk0903\BruteForce\obj\Debug\net7.0\BruteForce.pdb
+D:\OSPanel\domains\localhost\pr14mdk0903\BruteForce\obj\Debug\net7.0\BruteForce.genruntimeconfig.cache
+D:\OSPanel\domains\localhost\pr14mdk0903\BruteForce\obj\Debug\net7.0\ref\BruteForce.dll

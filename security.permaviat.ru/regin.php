@@ -94,7 +94,10 @@
 										alert("Пользователь с таким логином существует.");
 										loading.style.display = "none";
 										button.className = "button";
-									} else {
+									} else if(_data == "-2") {
+                            			alert("Слишком много попыток. IP заблокирован.");
+                        			}	
+									else{
 										location.reload();
 										loading.style.display = "none";
 										button.className = "button";
