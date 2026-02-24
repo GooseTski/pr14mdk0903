@@ -1,0 +1,5 @@
+D:\OSPanel\domains\localhost\pr14mdk0903\BruteForce\obj\Debug\net7.0\BruteForce.csproj.AssemblyReference.cache
+D:\OSPanel\domains\localhost\pr14mdk0903\BruteForce\obj\Debug\net7.0\BruteForce.GeneratedMSBuildEditorConfig.editorconfig
+D:\OSPanel\domains\localhost\pr14mdk0903\BruteForce\obj\Debug\net7.0\BruteForce.AssemblyInfoInputs.cache
+D:\OSPanel\domains\localhost\pr14mdk0903\BruteForce\obj\Debug\net7.0\BruteForce.AssemblyInfo.cs
+D:\OSPanel\domains\localhost\pr14mdk0903\BruteForce\obj\Debug\net7.0\BruteForce.csproj.CoreCompileInputs.cache
